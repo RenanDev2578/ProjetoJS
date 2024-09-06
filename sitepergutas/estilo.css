@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:ital,wght@0,600;0,700;1,400&display=swap');
+
+*, :root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Inter', sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Fundo com degradê */
+main { 
+    padding: 20px;
+    max-width: 640px;
+    margin: 0 auto 64px;
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.7), rgba(107, 33, 168, 0.7)); /* Degradê de azul-escuro para roxo-escuro com transparência */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(80, 77, 77, 0.3);
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+    -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
+    color: #ffffff; /* Texto claro para contraste */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borda sutil para o efeito de vidro */
+}
+
+header {
+    margin-top: 64px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #000000;
+}
+
+header h1 {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+/*efeito de vidro */
+.quiz-item {
+    margin-top: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borda sutil para o efeito de vidro */
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1); /* Fundo translúcido para o efeito de vidro */
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    -webkit-backdrop-filter: blur(10px);
+    color: #fffafa; /* Texto branco para boa legibilidade */
+    box-shadow: 0 4px 10px rgba(127, 126, 126, 0.2); /* Sombra sutil */
+}
+
+.quiz-item h3 {
+    padding: 16px 20px;
+}
+
+.quiz-item dl {
+    padding: 20px 24px;
+}
+
+/* Estilo do contador de acertos com efeito de vidro */
+#acertos {
+    text-align: center;
+    background: rgba(30, 58, 138, 0.7); /* Fundo com transparência */
+    backdrop-filter: blur(10px); /* Desfoque de fundo */
+    -webkit-backdrop-filter: blur(10px);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px;
+    color: #faf5f5; /* Texto branco */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borda sutil */
+}
